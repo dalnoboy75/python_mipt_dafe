@@ -173,6 +173,7 @@ def _get_lsm_description(
     x2 = 0
     for i in range(n):
         xy += abscissa[i] * ordinates[i]
+    xy = sum([abscissa[i]* ordinates[i] for i in range(n)])
     xy /= n
     x = sum(abscissa) / n
     y = sum(ordinates) / n
